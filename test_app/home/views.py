@@ -2,10 +2,20 @@ from django.http import HttpResponse
 from django.shortcuts import render 
 
 # Create your views here.
+
 def home(request):
-    context = {"text": "Hello World!!", "title": "Home"}
+    context={}
     return render(request, "home.html", context)
 
-def index(request):
-    context={}
-    return render(request, "index.html", context)
+def portfolio(request):
+    context = {}
+    return render(request, "portfolio.html", context)
+
+def about(request):
+    context = {}
+    return render(request, "about.html", context)
+
+def contact(request):
+    context = {}
+    return render(request, "contact.html", context)
+    

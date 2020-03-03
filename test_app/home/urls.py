@@ -1,7 +1,10 @@
-from django.conf.urls import url
-from home.views import home, index
+from django.urls import path
+from home.views import home, portfolio, about, contact
 
 urlpatterns = [
-    url(r"^index/", index, name="index"),
-    url(r"^$", home, name="home"),
+    path("portfolio.html", portfolio, name="portfolio"),
+    path("about.html", about, name="about"),
+    path("contact.html", contact, name="contact"),
+    path("index.html", home, name="home"),
 ]
+
