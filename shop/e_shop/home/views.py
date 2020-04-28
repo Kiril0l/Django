@@ -14,7 +14,7 @@ def home_page(request):
             {
                 "name": "Young Woman Wearing Dress 2",
                 "price": 110.00,
-                "image": "product-2.jpg",
+                "image": "product-2.jpg"
             },
             {
                 "name": "Young Woman Wearing Dress 3",
